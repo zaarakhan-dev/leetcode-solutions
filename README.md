@@ -30,5 +30,5 @@ leetcode-solutions/
 ├── README.md
 ├── .gitignore
 └── 0217-contains-duplicate/
-    ├── README.md          # Problem statement & constraints
-    └── solution.py        # Accepted implementation
+    ├── README.md                    # Problem statement & constraints
+    └── contains-duplicate.py        # Accepted implementation
