@@ -32,3 +32,6 @@ leetcode-solutions/
 └── 0217-contains-duplicate/
     ├── README.md                    # Problem statement & constraints
     └── contains-duplicate.py        # Accepted implementation
+└── 0242-valid-anagram/
+    ├── README.md                    # Problem statement & constraints
+    └── valid-anagram.py             # Accepted implementation
