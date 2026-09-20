@@ -17,6 +17,7 @@ A dedicated repository tracking my daily Data Structures & Algorithms practice, 
 | :---: | :---: | :--- | :--- | :---: | :--- | :---: | :---: |
 | 01 | 0217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Arrays & Hashing | Easy | Hash Set | $O(N)$ | $O(N)$ |
 | 02 | 0242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Arrays & Hashing | Easy | Frequency Map / Array | $O(N)$ | $O(1)$ |
+| 03 | 0001 | [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | Easy | One-Pass Hash Map | $O(N)$ | $O(N)$ |
 
 
 ---
@@ -35,3 +36,6 @@ leetcode-solutions/
 └── 0242-valid-anagram/
     ├── README.md                    # Problem statement & constraints
     └── valid-anagram.py             # Accepted implementation
+└── 1-two-sum/
+    ├── README.md                    # Problem statement & constraints
+    └── two-sum.py                   # Accepted implementation
