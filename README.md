@@ -19,6 +19,7 @@ A dedicated repository tracking my daily Data Structures & Algorithms practice, 
 | 02 | 0242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Arrays & Hashing | Easy | Frequency Map / Array | $O(N)$ | $O(1)$ |
 | 03 | 0001 | [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | Easy | One-Pass Hash Map | $O(N)$ | $O(N)$ |
 | 04 | 0049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Arrays & Hashing | Medium | Categorize by Sorted Str / Char Count Tuple | $O(N \cdot K \log K)$ | $O(N \cdot K)$ |
+| 05 | 0347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Arrays & Hashing | Medium | Bucket Sort / Min-Heap | $O(N)$ | $O(N)$ |
 
 ---
 
@@ -42,3 +43,6 @@ leetcode-solutions/
 └── 049-group-anagrams
     ├── README.md                    # Problem statement & constraints
     └── group-anagrams.py            # Accepted implementation
+└── 347-top-k-frequent-elements
+    ├── README.md                    # Problem statement & constraints
+    └── top-k-frequent-elements.py   # Accepted implementation
