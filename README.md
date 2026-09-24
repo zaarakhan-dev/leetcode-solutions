@@ -21,6 +21,7 @@ A dedicated repository tracking my daily Data Structures & Algorithms practice, 
 | 04 | 0049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Arrays & Hashing | Medium | Categorize by Sorted Str / Char Count Tuple | $O(N \cdot K \log K)$ | $O(N \cdot K)$ |
 | 05 | 0347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Arrays & Hashing | Medium | Bucket Sort / Min-Heap | $O(N)$ | $O(N)$ |
 | 06 | 0238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Arrays & Hashing | Medium | Prefix & Postfix Running Products | $O(N)$ | $O(1)^*$ |
+| 07 | 0125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Two Pointers | Easy | Two Pointers (Inward Scan with `isalnum`) | $O(N)$ | $O(1)$ |
 
 > *\*Note on #238: The output array does not count as extra space for complexity analysis.*
 
@@ -50,5 +51,16 @@ leetcode-solutions/
 │   ├── README.md
 │   └── top-k-frequent-elements.py
 └── 0238-product-of-array-except-self/
+│   ├── README.md
+│   └── product-of-array-except-self.py
+└── 0125-valid-palindrome/
     ├── README.md
-    └── product-of-array-except-self.py
+    └── valid-palindrome.py
+```
+⚙️ Setup & Tools
+
+Platform: LeetCode
+
+Automation: LeetSync / LeetHub v3 (automatic Git commits upon acceptance)
+
+Primary Language: Python 3
