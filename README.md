@@ -22,6 +22,7 @@ A dedicated repository tracking my daily Data Structures & Algorithms practice, 
 | 05 | 0347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Arrays & Hashing | Medium | Bucket Sort / Min-Heap | $O(N)$ | $O(N)$ |
 | 06 | 0238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Arrays & Hashing | Medium | Prefix & Postfix Running Products | $O(N)$ | $O(1)^*$ |
 | 07 | 0125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Two Pointers | Easy | Two Pointers (Inward Scan with `isalnum`) | $O(N)$ | $O(1)$ |
+| 08 | 0167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Two Pointers | Medium | Two Pointers (Converging Left/Right Bounds) | $O(N)$ | $O(1)$ |
 
 > *\*Note on #238: The output array does not count as extra space for complexity analysis.*
 
@@ -54,13 +55,16 @@ leetcode-solutions/
 │   ├── README.md
 │   └── product-of-array-except-self.py
 └── 0125-valid-palindrome/
+│   ├── README.md
+│   └── valid-palindrome.py
+└── 0167-two-sum-ii-input-array-is-sorted/
     ├── README.md
-    └── valid-palindrome.py
+    └── two-sum-ii-input-array-is-sorted.py
 ```
-⚙️ Setup & Tools
+## ⚙️ Setup & Tools
 
-Platform: LeetCode
+**Platform:** LeetCode
 
-Automation: LeetSync / LeetHub v3 (automatic Git commits upon acceptance)
+**Automation:** LeetSync / LeetHub v3 (automatic Git commits upon acceptance)
 
-Primary Language: Python 3
+**Primary Language:** Python 3
