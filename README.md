@@ -78,8 +78,10 @@ leetcode-solutions/
 │   ├── README.md
 │   └── remove-duplicates-from-sorted-array.py
 └── 0977-squares-of-a-sorted-array/
-    ├── README.md
-    └── squares-of-a-sorted-array.py
+│   ├── README.md
+│   └── squares-of-a-sorted-array.py
+└── .gitignore
+└── Pattern Cheat Sheet.md
 ```
 ## ⚙️ Setup & Tools
 
