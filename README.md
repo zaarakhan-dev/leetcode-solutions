@@ -26,8 +26,10 @@ A dedicated repository tracking my daily Data Structures & Algorithms practice, 
 | 09 | 0344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Two Pointers | Easy | Two Pointers (In-place Swap) | $O(N)$ | $O(1)$ |
 | 10 | 0283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Two Pointers | Easy | Fast & Slow Pointers (In-place Partition) | $O(N)$ | $O(1)$ |
 | 11 | 0027 | [Remove Element](https://leetcode.com/problems/remove-element/) | Two Pointers | Easy | Fast & Slow Pointers (In-place Overwrite) | $O(N)$ | $O(1)$ |
+| 12 | 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Two Pointers | Easy | Fast & Slow Pointers (Unique Element Placement) | $O(N)$ | $O(1)$ |
+| 13 | 0977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Two Pointers | Easy | Two Pointers (Outward-in Absolute Comparison) | $O(N)$ | $O(N)^*$ |
 
-> *\*Note on #238: The output array does not count as extra space for complexity analysis.*
+> *\*Note on #238 & #977: The output array does not count as extra space for complexity analysis.*
 
 ---
 
@@ -70,8 +72,14 @@ leetcode-solutions/
 │   ├── README.md
 │   └── move-zeroes.py
 └── 0027-remove-element/
+│   ├── README.md
+│   └── remove-element.py
+├── 0026-remove-duplicates-from-sorted-array/
+│   ├── README.md
+│   └── remove-duplicates-from-sorted-array.py
+└── 0977-squares-of-a-sorted-array/
     ├── README.md
-    └── remove-element.py
+    └── squares-of-a-sorted-array.py
 ```
 ## ⚙️ Setup & Tools
 
