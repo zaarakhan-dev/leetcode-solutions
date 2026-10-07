@@ -5,6 +5,7 @@ A dedicated repository tracking my daily Data Structures & Algorithms practice, 
 ---
 
 ## 🎯 Goals & Practice Strategy
+
 - **Consistency:** 1+ problem solved daily.
 - **Complexity First:** Analyze time and space complexity before coding; optimize from brute force to optimal patterns.
 - **Pattern Mastery:** Focus on core paradigms: Prefix/Suffix Products, Hash Maps, Two Pointers, Sliding Window, Monotonic Stacks, and Trees.
@@ -13,23 +14,25 @@ A dedicated repository tracking my daily Data Structures & Algorithms practice, 
 
 ## 📊 Solved Problems Index
 
-| Day | # | Problem | Topic | Difficulty | Optimal Approach | Time | Space |
-| :---: | :---: | :--- | :--- | :---: | :--- | :---: | :---: |
-| 01 | 0217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Arrays & Hashing | Easy | Hash Set Membership | $O(N)$ | $O(N)$ |
-| 02 | 0242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Arrays & Hashing | Easy | Frequency Array / Map | $O(N)$ | $O(1)$ |
-| 03 | 0001 | [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | Easy | One-Pass Hash Map | $O(N)$ | $O(N)$ |
-| 04 | 0049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Arrays & Hashing | Medium | Categorize by Sorted Str / Char Count Tuple | $O(N \cdot K \log K)$ | $O(N \cdot K)$ |
-| 05 | 0347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Arrays & Hashing | Medium | Bucket Sort / Min-Heap | $O(N)$ | $O(N)$ |
-| 06 | 0238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Arrays & Hashing | Medium | Prefix & Postfix Running Products | $O(N)$ | $O(1)^*$ |
-| 07 | 0125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Two Pointers | Easy | Two Pointers (Inward Scan with `isalnum`) | $O(N)$ | $O(1)$ |
-| 08 | 0167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Two Pointers | Medium | Two Pointers (Converging Left/Right Bounds) | $O(N)$ | $O(1)$ |
-| 09 | 0344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Two Pointers | Easy | Two Pointers (In-place Swap) | $O(N)$ | $O(1)$ |
-| 10 | 0283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Two Pointers | Easy | Fast & Slow Pointers (In-place Partition) | $O(N)$ | $O(1)$ |
-| 11 | 0027 | [Remove Element](https://leetcode.com/problems/remove-element/) | Two Pointers | Easy | Fast & Slow Pointers (In-place Overwrite) | $O(N)$ | $O(1)$ |
-| 12 | 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Two Pointers | Easy | Fast & Slow Pointers (Unique Element Placement) | $O(N)$ | $O(1)$ |
-| 13 | 0977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Two Pointers | Easy | Two Pointers (Outward-in Absolute Comparison) | $O(N)$ | $O(N)^*$ |
+| Day |  #   | Problem                                                                                                   | Topic            | Difficulty | Optimal Approach                                |         Time          |     Space      |
+| :-: | :--: | :-------------------------------------------------------------------------------------------------------- | :--------------- | :--------: | :---------------------------------------------- | :-------------------: | :------------: |
+| 01  | 0217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                   | Arrays & Hashing |    Easy    | Hash Set Membership                             |        $O(N)$         |     $O(N)$     |
+| 02  | 0242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                             | Arrays & Hashing |    Easy    | Frequency Array / Map                           |        $O(N)$         |     $O(1)$     |
+| 03  | 0001 | [Two Sum](https://leetcode.com/problems/two-sum/)                                                         | Arrays & Hashing |    Easy    | One-Pass Hash Map                               |        $O(N)$         |     $O(N)$     |
+| 04  | 0049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                           | Arrays & Hashing |   Medium   | Categorize by Sorted Str / Char Count Tuple     | $O(N \cdot K \log K)$ | $O(N \cdot K)$ |
+| 05  | 0347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                         | Arrays & Hashing |   Medium   | Bucket Sort / Min-Heap                          |        $O(N)$         |     $O(N)$     |
+| 06  | 0238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)               | Arrays & Hashing |   Medium   | Prefix & Postfix Running Products               |        $O(N)$         |    $O(1)^*$    |
+| 07  | 0125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                       | Two Pointers     |    Easy    | Two Pointers (Inward Scan with `isalnum`)       |        $O(N)$         |     $O(1)$     |
+| 08  | 0167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)     | Two Pointers     |   Medium   | Two Pointers (Converging Left/Right Bounds)     |        $O(N)$         |     $O(1)$     |
+| 09  | 0344 | [Reverse String](https://leetcode.com/problems/reverse-string/)                                           | Two Pointers     |    Easy    | Two Pointers (In-place Swap)                    |        $O(N)$         |     $O(1)$     |
+| 10  | 0283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/)                                                 | Two Pointers     |    Easy    | Fast & Slow Pointers (In-place Partition)       |        $O(N)$         |     $O(1)$     |
+| 11  | 0027 | [Remove Element](https://leetcode.com/problems/remove-element/)                                           | Two Pointers     |    Easy    | Fast & Slow Pointers (In-place Overwrite)       |        $O(N)$         |     $O(1)$     |
+| 12  | 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Two Pointers     |    Easy    | Fast & Slow Pointers (Unique Element Placement) |        $O(N)$         |     $O(1)$     |
+| 13  | 0977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)                     | Two Pointers     |    Easy    | Two Pointers (Outward-in Absolute Comparison)   |        $O(N)$         |    $O(N)^*$    |
+| 14  | 0643 | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)                   | Sliding Window   |    Easy    | Fixed-Size Sliding Window                       |        $O(N)$         |     $O(1)$     |
+| 15  | 0209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)                     | Sliding Window   |   Medium   | Dynamic-Size Sliding Window (Shrinking Bounds)  |        $O(N)$         |     $O(1)$     |
 
-> *\*Note on #238 & #977: The output array does not count as extra space for complexity analysis.*
+> _\*Note on #238 & #977: The output array does not count as extra space for complexity analysis._
 
 ---
 
@@ -80,9 +83,16 @@ leetcode-solutions/
 └── 0977-squares-of-a-sorted-array/
 │   ├── README.md
 │   └── squares-of-a-sorted-array.py
+├── 0643-maximum-average-subarray-i/
+│   ├── README.md
+│   └── maximum-average-subarray-i.py
+└── 0209-minimum-size-subarray-sum/
+│   ├── README.md
+│   └── minimum-size-subarray-sum.py
 └── .gitignore
 └── Pattern Cheat Sheet.md
 ```
+
 ## ⚙️ Setup & Tools
 
 **Platform:** LeetCode
