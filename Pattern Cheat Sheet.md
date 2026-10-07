@@ -145,3 +145,28 @@
   - `right` array banao: index `i` ke right ke saare elements ka cumulative product store karo (peeche se iterate karke).
   - Final result: har index par `ans[i] = left[i] * right[i]`.
 - **Complexity:** Time: O(n) | Space: O(n) (ya O(1) extra space agar output array ke andar hi right product calculate kar liya jaye)
+
+## 14. Maximum Average Subarray I (LeetCode #643)
+
+- **Pattern:** Sliding Window (Fixed Size)
+- **Trigger:** Contiguous subarray of a fixed length `k` requiring maximum/minimum sum or average.
+- **Core Logic:**
+  - Calculate initial sum of the first `k` elements: `window_sum = sum(nums[:k])`.
+  - Loop `i` from `k` to `len(nums) - 1`:
+    - Slide window: `window_sum += nums[i] - nums[i - k]`.
+    - Update max: `max_sum = max(max_sum, window_sum)`.
+  - Return `max_sum / k`.
+- **Complexity:** Time: O(n) | Space: O(1)
+
+## 15. Minimum Size Subarray Sum (LeetCode #209)
+
+- **Pattern:** Sliding Window (Dynamic / Variable Size)
+- **Trigger:** Smallest contiguous subarray satisfying a condition (sum >= target).
+- **Core Logic:**
+  - `left = 0`, `current_sum = 0`, `min_length = infinity`.
+  - Loop `right` across the array and add `nums[right]` to `current_sum`.
+  - While `current_sum >= target`:
+    - Record length: `min_length = min(min_length, right - left + 1)`.
+    - Shrink window: `current_sum -= nums[left]`, then `left += 1`.
+  - Return `min_length` (or `0` if impossible).
+- **Complexity:** Time: O(n) | Space: O(1)
