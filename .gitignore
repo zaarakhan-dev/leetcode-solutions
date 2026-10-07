@@ -1,0 +1,18 @@
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+
+# C / C++
+*.o
+*.out
+*.exe
+
+# OS / Editor Metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
