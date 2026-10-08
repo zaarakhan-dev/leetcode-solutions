@@ -171,3 +171,32 @@
   - Return `min_length` (or `0` if impossible).
 - **Complexity:** Time: O(n) | Space: O(1)
 
+## 16. Longest Substring Without Repeating Characters (LeetCode #3)
+
+- **Pattern:** Sliding Window (Dynamic Size) + Hash Set
+- **Trigger:** Longest continuous substring jisme koi repeating/duplicate character na ho.
+- **Core Logic:**
+  - `char_set = set()`, `left = 0`, `max_len = 0`.
+  - Loop `right` across string:
+    - While `s[right] in char_set`:
+      - `char_set.remove(s[left])`
+      - `left += 1`
+    - `char_set.add(s[right])`
+    - `max_len = max(max_len, right - left + 1)`
+  - Return `max_len`.
+- **Complexity:** Time: O(n) | Space: O(min(n, m))
+
+## 17. Max Consecutive Ones III (LeetCode #1004)
+
+- **Pattern:** Sliding Window (Dynamic / Variable Size)
+- **Trigger:** Longest continuous subarray containing at most `k` flips/zeros.
+- **Core Logic:**
+  - `left = 0`, `zero_count = 0`, `max_len = 0`.
+  - Loop `right` across `nums`:
+    - If `nums[right] == 0`: `zero_count += 1`.
+    - While `zero_count > k`:
+      - If `nums[left] == 0`: `zero_count -= 1`.
+      - `left += 1`
+    - `max_len = max(max_len, right - left + 1)`
+  - Return `max_len`.
+- **Complexity:** Time: O(n) | Space: O(1)
