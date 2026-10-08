@@ -1,10 +1,10 @@
-# 🚀 Daily LeetCode & DSA Journey
+#  Daily LeetCode & DSA Journey
 
 A dedicated repository tracking my daily Data Structures & Algorithms practice, problem-solving intuition, and runtime analysis. Synced directly from [LeetCode](https://leetcode.com).
 
 ---
 
-## 🎯 Goals & Practice Strategy
+##  Goals & Practice Strategy
 
 - **Consistency:** 1+ problem solved daily.
 - **Complexity First:** Analyze time and space complexity before coding; optimize from brute force to optimal patterns.
@@ -12,7 +12,7 @@ A dedicated repository tracking my daily Data Structures & Algorithms practice, 
 
 ---
 
-## 📊 Solved Problems Index
+##  Solved Problems Index
 
 | Day |  #   | Problem                                                                                                                         | Topic            | Difficulty | Optimal Approach                                     |         Time          |      Space      |
 | :-: | :--: | :------------------------------------------------------------------------------------------------------------------------------ | :--------------- | :--------: | :--------------------------------------------------- | :-------------------: | :-------------: |
@@ -38,7 +38,7 @@ A dedicated repository tracking my daily Data Structures & Algorithms practice, 
 
 ---
 
-## 📂 Repository Organization
+##  Repository Organization
 
 Solutions are synced automatically upon receiving an **Accepted** verdict:
 
@@ -102,7 +102,7 @@ leetcode-solutions/
 └── README.md
 ```
 
-## ⚙️ Setup & Tools
+##  Setup & Tools
 
 **Platform:** LeetCode
 
