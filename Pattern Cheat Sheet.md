@@ -200,3 +200,40 @@
     - `max_len = max(max_len, right - left + 1)`
   - Return `max_len`.
 - **Complexity:** Time: O(n) | Space: O(1)
+
+## 18. Linked List Cycle (LeetCode #141)
+
+- **Pattern:** Fast & Slow Pointers (Tortoise & Hare)
+- **Trigger:** Detect a loop / cycle in a Linked List or cyclic sequence with O(1) space.
+- **Core Logic:**
+  - `slow = head`, `fast = head`.
+  - While `fast and fast.next`:
+    - `slow = slow.next` (1 step)
+    - `fast = fast.next.next` (2 steps)
+    - If `slow == fast`: return `True` (collision).
+  - Return `False` if `fast` hits `None`.
+- **Complexity:** Time: O(n) | Space: O(1)
+
+## 19. Linked List Cycle II (LeetCode #142)
+
+- **Pattern:** Fast & Slow Pointers (Floyd's Cycle-Finding Algorithm — 2 Phases)
+- **Trigger:** Linked list me cycle detect karna aur exact entry/start node return karna in O(1) auxiliary space.
+- **Core Logic:**
+  - **Phase 1 (Detect Cycle & Meet):**
+    - `slow = head`, `fast = head`, `has_cycle = False`
+    - Loop `while fast and fast.next`:
+      - `slow = slow.next` (1 step)
+      - `fast = fast.next.next` (2 steps)
+      - If `slow == fast`: `has_cycle = True`, break.
+    - If `not has_cycle`: return `None`.
+  - **Phase 2 (Find Entry Node):**
+    - Reset `slow = head` (keeping `fast` at collision point).
+    - Loop `while slow != fast`:
+      - `slow = slow.next` (1 step)
+      - `fast = fast.next` (1 step)
+    - Return `slow`.
+- **Mathematical Invariant:**
+  - $L_1 = n \cdot C - L_2 \implies$ Head se entry ka distance collision point se aage entry tak ke distance ke barabar hota hai.
+- **Complexity:**
+  - Time: $O(n)$
+  - Space: $O(1)$
