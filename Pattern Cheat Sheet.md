@@ -237,3 +237,29 @@
 - **Complexity:**
   - Time: $O(n)$
   - Space: $O(1)$
+
+## 20. Middle of the Linked List (LeetCode #876)
+
+- **Pattern:** Fast & Slow Pointers (Midpoint Traversal)
+- **Trigger:** Linked list ka middle node find karna in a single pass with O(1) space.
+- **Core Logic:**
+  - `slow = head`, `fast = head`.
+  - While `fast and fast.next`:
+    - `slow = slow.next` (1 step)
+    - `fast = fast.next.next` (2 steps)
+  - Return `slow`.
+- **Invariant:** Jab `fast` list ke end (`None` ya last node) par pahunchta hai, `slow` automatically midpoint par hota hai.
+- **Complexity:** Time: O(n) | Space: O(1)
+
+## 21. Happy Number (LeetCode #202)
+
+- **Pattern:** Fast & Slow Pointers (Implicit Cycle Detection)
+- **Trigger:** Number sequence me infinite cycle ya terminal condition (1) check karna in O(1) space.
+- **Core Logic:**
+  - Helper `get_next(n)`: Har digit ka square add karta hai using `% 10` and `// 10`.
+  - `slow = n`, `fast = get_next(n)`.
+  - While `fast != 1 and slow != fast`:
+    - `slow = get_next(slow)`
+    - `fast = get_next(get_next(fast))`
+  - Return `fast == 1`.
+- **Complexity:** Time: O(log n) | Space: O(1)
